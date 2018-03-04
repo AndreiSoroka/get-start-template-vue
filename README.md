@@ -5,7 +5,7 @@ npm i;
 npm run build;
 ```
 
-Static build in [./public/](./public)
+Static build in `./public/`
 
 ### Build development
 
@@ -46,7 +46,7 @@ npm run server;
 Link: [localhost:8060](http://localhost:8060/)
 
 ### Deploy
-Rename [./config/ftp.example.json](./config/ftp.example.json) to [./config/ftp.json](./config/ftp.json) 
+Rename [./config/ftp.example.json](./config/ftp.example.json) to `./config/ftp.json` 
 
 After then
 ``` bash
