@@ -1,0 +1,47 @@
+// Bootstrap core
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
+// Reset and dependencies
+@import "~normalize.css/normalize.css";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/print";
+
+// Style core
+* {
+  box-sizing: border-box;
+}
+
+// Styles
+@import "~bootstrap/scss/nav";
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #333;
+  min-width: 470px;
+}
+
+.my-application {
+  transition: width .3s linear;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  padding: 0 50px;
+  font-size: 14px;
+}
+
+@media (max-width: 850px) {
+  .my-application {
+    width: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .my-application {
+    width: 370px;
+    font-size: 16px;
+  }
+}

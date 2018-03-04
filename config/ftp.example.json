@@ -1,0 +1,7 @@
+{
+  "user": "user",
+  "password": "password",
+  "host": "ftp.mysite.com",
+  "port": 21,
+  "remoteRoot": "/var/www/"
+}
