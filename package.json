@@ -12,8 +12,7 @@
     "server": "node server"
   },
   "author": "Andrei Soroka",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/hrblabla/cloud-editor-ui#readme",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.26.0",
