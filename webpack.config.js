@@ -42,12 +42,6 @@ let configWebpack = {
   module: {
     rules: [
       {
-        enforce: 'pre',
-        test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      },
-      {
         test: /\.js$/,
         loader: "babel-loader",
         options: {presets: ['es2015'], plugins: ["transform-object-rest-spread", "syntax-dynamic-import"]},
@@ -104,9 +98,15 @@ let configWebpack = {
 /* ****
  * **** BUILDER
  * ****/
+
+// PRODUCTION
 if (NODE_ENV === 'production') {
+  // optimization JS files
   configWebpack.plugins.push(new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}}));
-} else if (NODE_ENV === 'development') {
+}
+// DEVELOPMENT
+else if (NODE_ENV === 'development') {
+  // Show progress bar in command line
   const ProgressBarPlugin = require('progress-bar-webpack-plugin');
   const chalk = require('chalk');
 
@@ -114,7 +114,17 @@ if (NODE_ENV === 'production') {
     format: `[:bar] ${chalk.green.bold(':msg')} :percent (:elapsed seconds)`,
     clear: false
   }));
+
+  // Devtool is eval
   configWebpack.devtool = 'eval';
+
+  // Connected ESLint
+  configWebpack.module.rules.push({
+    enforce: 'pre',
+    test: /\.(js|vue)$/,
+    loader: 'eslint-loader',
+    exclude: /node_modules/
+  });
 }
 
 module.exports = configWebpack;
