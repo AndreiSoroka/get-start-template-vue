@@ -45,6 +45,23 @@ npm run server;
 
 Link: [localhost:8060](http://localhost:8060/)
 
+### Development
+
+Project tree
+
+ * [application](./application)
+   * [router](./application/router)
+   * [vue](./application/vue)
+   * [vuex](./application/vuex)
+ * [config](./config)
+ * node_modules
+ * public
+
+(!) In this project connected `bootstrap` and `normalize`. 
+If you want to remove that then need to remove modules
+ in [package.json](./package.json) and remove connected [app.scss](./application/vue/app.scss)  
+
+
 ### Deploy
 Rename [./config/ftp.example.json](./config/ftp.example.json) to `./config/ftp.json` 
 
