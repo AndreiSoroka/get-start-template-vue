@@ -9,11 +9,11 @@
 <style lang="scss"></style>
 
 <script>
-  import './app.scss'
+  import './app.scss';
 
-  import HeaderTemplate from './template/Header/index.vue'
-  import NavigationTemplate from './template/Navigation/index.vue'
-  import {mapState} from 'vuex'
+  import HeaderTemplate from './template/Header/index.vue';
+  import NavigationTemplate from './template/Navigation/index.vue';
+  import {mapState} from 'vuex';
 
 
   export default {
@@ -22,12 +22,12 @@
       NavigationTemplate,
     },
     data() {
-      return {}
+      return {};
     },
 
     computed: {
       ...mapState({})
     },
     methods: {},
-  }
+  };
 </script>

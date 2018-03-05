@@ -14,17 +14,17 @@
 <script>
   import './style.scss';
 
-  import {mapState} from 'vuex'
+  import {mapState} from 'vuex';
 
   export default {
     components: {},
     data() {
-      return {}
+      return {};
     },
 
     computed: {
       ...mapState({})
     },
     methods: {},
-  }
+  };
 </script>

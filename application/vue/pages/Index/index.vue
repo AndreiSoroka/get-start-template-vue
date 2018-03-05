@@ -6,7 +6,7 @@
 
 
 <script>
-  import './style.scss'
+  import './style.scss';
 
-  export default {}
+  export default {};
 </script>
