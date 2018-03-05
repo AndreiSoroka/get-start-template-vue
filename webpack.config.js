@@ -42,6 +42,16 @@ let configWebpack = {
   module: {
     rules: [
       {
+        test: /\.js$/, // include .js files
+        enforce: "pre", // preload the jshint loader
+        exclude: /node_modules/, // exclude any and all files in the node_modules folder
+        use: [
+          {
+            loader: "jshint-loader"
+          }
+        ]
+      },
+      {
         test: /\.js$/,
         loader: "babel-loader",
         options: {presets: ['es2015'], plugins: ["transform-object-rest-spread", "syntax-dynamic-import"]},

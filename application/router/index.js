@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
@@ -19,4 +19,4 @@ export default new VueRouter({
   linkActiveClass: 'router-link-active',
   linkExactActiveClass: 'router-link-exact-active active',
   routes
-})
+});
