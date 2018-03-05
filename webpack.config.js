@@ -80,12 +80,12 @@ let configWebpack = {
         })
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[name]_[hash].[ext]'
+              name: 'images/[name]_[hash].[ext]'
             }
           }
         ]
