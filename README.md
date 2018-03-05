@@ -59,7 +59,10 @@ Project tree
 
 (!) In this project connected `bootstrap` and `normalize`. 
 If you want to remove that then need to remove modules
- in [package.json](./package.json) and remove connected [app.scss](./application/vue/app.scss)  
+ in [package.json](./package.json) and remove connected [app.scss](./application/vue/app.scss)
+ 
+Settings [ESLint](https://eslint.org/) in [.eslintrc](./.eslintrc). 
+You can disable ESLint in [webpack.config.js](./webpack.config.js).   
 
 
 ### Deploy
