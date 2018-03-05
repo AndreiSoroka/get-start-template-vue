@@ -1,5 +1,7 @@
 {
-  "process.env": {
-    "NODE_ENV": "\"production\""
+  "definePlugin": {
+    "process.env": {
+      "NODE_ENV": "\"production\""
+    }
   }
 }

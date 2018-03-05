@@ -1,8 +1,8 @@
 ### Build production
 
 ``` bash
-npm i;
-npm run build;
+npm i
+npm run build
 ```
 
 Static build in `./public/`
@@ -12,22 +12,33 @@ Static build in `./public/`
 Build and show errors (--display-error-details)
 
 ``` bash
-npm i;
-npm run build:dev;
+npm i
+npm run build:dev
 ```
 
 Build and watch
 
 ``` bash
-npm i;
-npm run build:watch;
+npm i
+npm run build:watch
 ```
 
+### Dev server
+
+It is build for dev + watch + server + hot reload
+
+``` bash
+npm run server
+```
+
+Link: [localhost:8060](http://localhost:8060/)
+
+You can change host and port in [config/development.json](./config/development.json)
 
 ### Test
 
 ``` bash
-npm run test;
+npm run test
 ```
 
 See: 
@@ -36,14 +47,6 @@ and
 [chaijs.com](http://chaijs.com/)
 
 Includes all files by pattern `./application/**/*.test.js`
-
-### Dev server
-
-``` bash
-npm run server;
-```
-
-Link: [localhost:8060](http://localhost:8060/)
 
 ### Development
 
@@ -70,5 +73,5 @@ Rename [./config/ftp.example.json](./config/ftp.example.json) to `./config/ftp.j
 
 After then
 ``` bash
-npm run deploy;
+npm run deploy
 ```

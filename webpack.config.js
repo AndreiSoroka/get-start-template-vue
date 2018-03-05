@@ -36,7 +36,7 @@ let configWebpack = {
       disable: false,
       allChunks: true
     }),
-    new webpack.DefinePlugin(config),
+    new webpack.DefinePlugin(config.definePlugin),
   ],
 
   module: {
