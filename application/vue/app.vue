@@ -17,6 +17,10 @@
 
 
   export default {
+    components: {
+      HeaderTemplate,
+      NavigationTemplate,
+    },
     data() {
       return {}
     },
@@ -24,11 +28,6 @@
     computed: {
       ...mapState({})
     },
-    methods: {
-    },
-    components: {
-      HeaderTemplate,
-      NavigationTemplate,
-    }
+    methods: {},
   }
 </script>

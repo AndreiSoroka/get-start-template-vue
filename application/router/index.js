@@ -9,7 +9,6 @@ const NotFoundPage = () => import(/* webpackChunkName: "NotFoundPage" */ '../vue
 
 const routes = [
   {path: '/', component: IndexPage},
-
   {path: '*', component: NotFoundPage}
 ];
 

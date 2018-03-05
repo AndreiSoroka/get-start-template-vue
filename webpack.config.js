@@ -42,6 +42,12 @@ let configWebpack = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      },
+      {
         test: /\.js$/, // include .js files
         enforce: "pre", // preload the jshint loader
         exclude: /node_modules/, // exclude any and all files in the node_modules folder
