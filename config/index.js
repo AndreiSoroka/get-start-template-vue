@@ -1,4 +1,4 @@
-const _ = require('lodash');
+const defaultsDeep = require('lodash/defaultsDeep');
 
 const config_production = require('./production.json');
 const config_development = require('./development.json');
@@ -11,7 +11,7 @@ function get(NODE_ENV) {
   let config = config_production;
 
   if (NODE_ENV === 'development') {
-    config = _.defaults(config_development, config);
+    config = defaultsDeep(config_development, config);
   }
   return config;
 }
