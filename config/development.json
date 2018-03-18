@@ -4,10 +4,17 @@
       "NODE_ENV": "\"development\""
     }
   },
-  "_onlyDevelopment": {
-    "devServer": {
-      "host": "localhost",
-      "port": 8060
+  "devServer": {
+    "host": "localhost",
+    "port": 8060,
+    "options": {
+      "disableHostCheck": false,
+      "hot": true,
+      "compress": false
     }
+  },
+  "expressServer": {
+    "host": "localhost",
+    "port": 8060
   }
 }

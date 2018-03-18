@@ -1,25 +1,43 @@
-### Build production
+### Build production and start server
 
 ``` bash
 npm i
-npm run build
+npm start
 ```
 
 Static build in `./public/`
 
-### Build development
+Express server listen [0.0.0.0:3000](http://0.0.0.0:3000/) 
+or you can send PORT and HOST
 
-Build and show errors (--display-error-details)
-
-``` bash
-npm i
-npm run build:dev
+```bash
+HOST=example.loc PORT=3001 npm start
 ```
 
-Build and watch
+### Configs
+
+You can change in [config/production.json](./config/production.json) and  [config/development.json](./config/development.json)
+
+Information about FTP config below
+
+### Build
+All static is building in path: `./public`.
+
+Use production config:
+
+```bash
+npm run build:prod
+```
+
+Use development config and show errors (--display-error-details):
 
 ``` bash
-npm i
+npm run build
+```
+
+Use development config and enable watcher (--watch)
+
+``` bash
 npm run build:watch
 ```
 
@@ -27,13 +45,67 @@ npm run build:watch
 
 It is build for dev + watch + server + hot reload
 
+Use production config:
+
 ``` bash
-npm run server
+npm run devserver:prod
+```
+Link: [0.0.0.0:3000](http://0.0.0.0:3000/)
+
+Use development config:
+
+``` bash
+npm run devserver
 ```
 
 Link: [localhost:8060](http://localhost:8060/)
 
-You can change host and port in [config/development.json](./config/development.json)
+You can change host and port in [config](./config/) in field `devServer`.
+
+And you can send env HOST and PORT. For example:
+
+```bash
+HOST=127.0.0.1 PORT=3001 npm run devserver
+```
+
+### Express server
+
+It is only server.
+
+Use production config:
+
+``` bash
+npm run server:prod
+```
+
+Link: [0.0.0.0:3000](http://0.0.0.0:3000/)
+
+Use development config:
+
+``` bash
+npm run server
+```
+
+
+Link: [localhost:8060](http://localhost:8060/)
+
+You can change host and port in [config](./config/) in field `expressServer`.
+
+And you can send env HOST and PORT. For example:
+
+```bash
+HOST=127.0.0.1 PORT=3001 npm run server
+```
+
+If you want use express server and build watch then open two terminals:
+```bash
+# terminal 1:
+npm run build:watch
+ 
+# termitanl 2:
+npm run server
+```
+or use devServer
 
 ### Test
 

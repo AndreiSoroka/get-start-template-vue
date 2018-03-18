@@ -3,5 +3,20 @@
     "process.env": {
       "NODE_ENV": "\"production\""
     }
+  },
+  "devServer": {
+    "host": "0.0.0.0",
+    "port": 3000,
+    "options": {
+      "historyApiFallback": true,
+      "disableHostCheck": true,
+      "hot": false,
+      "compress": true,
+      "inline": false
+    }
+  },
+  "expressServer": {
+    "host": "0.0.0.0",
+    "port": 3000
   }
 }

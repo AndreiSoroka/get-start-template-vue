@@ -13,7 +13,7 @@ let configWebpack = {
   context: path.join(__dirname, './application/'),
 
   entry: {
-    app: "./app.js",
+    app: "./App.js",
   },
 
   output: {
@@ -25,7 +25,7 @@ let configWebpack = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'HRbb',
+      title: 'Example server',
       hash: NODE_ENV === 'production',
       cache: false,
       template: 'index.ejs',
