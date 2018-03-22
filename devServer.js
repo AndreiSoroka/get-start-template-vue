@@ -24,7 +24,7 @@ let configDevServer = Object.assign(configServer.options, {
 if (NODE_ENV === 'development') {
   webpackConfig.entry = [
     `webpack-dev-server/client?${url}`,
-    'webpack/hot/only-dev-server',
+    'webpack/hot/dev-server',
     './App.js'
   ];
 }
