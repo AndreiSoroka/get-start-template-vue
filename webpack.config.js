@@ -101,8 +101,10 @@ let configWebpack = {
 
 // PRODUCTION
 if (NODE_ENV === 'production') {
+  const UglifyEsPlugin = require('uglify-es-webpack-plugin');
+
   // optimization JS files
-  configWebpack.plugins.push(new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}}));
+  configWebpack.plugins.push(new UglifyEsPlugin({compress: {warnings: false}}));
 }
 // DEVELOPMENT
 else if (NODE_ENV === 'development') {
