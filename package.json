@@ -1,6 +1,6 @@
 {
   "name": "get-start-template-vue",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,8 +14,7 @@
     "server:prod": "NODE_ENV=production node expressServer",
     "server": "node expressServer",
     "test": "mocha",
-    "deploy": "node deploy",
-    "get-start-template-vue": "npm run build:prod"
+    "deploy": "node scripts/deploy"
   },
   "author": "Andrei Soroka",
   "license": "MIT",

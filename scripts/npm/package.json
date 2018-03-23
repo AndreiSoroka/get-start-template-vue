@@ -1,0 +1,16 @@
+{
+  "name": "get-start-template-vue",
+  "version": "1.0.9b",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "get-start-template-vue": "./npx_script/cli.js"
+  },
+  "author": "Andrei Soroka",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "github-download": "^0.5.0"
+  }
+}
