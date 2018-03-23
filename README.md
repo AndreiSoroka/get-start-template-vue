@@ -1,18 +1,13 @@
-### get-start-template-vue
+### Fast create project
 
-Stop! Stop! Version 1.0 is not ready.
-Wait 2.0 plz.
+```bash
+npx get-start-template-vue ./my-application
+cd ./my-application
+npm i
+```
 
-Okay. If you want now... Need
-```bash
-git clone git@github.com:AndreiSoroka/get-start-template-vue.git
-```
-In the future i want
-```bash
-### not reaady
-npx get-start-template-vue my-application
-```
-Tnx!
+This command create dir 'my-application' and download Vue template.
+
 
 ### Build production and start server
 
@@ -145,6 +140,7 @@ Project tree
    * [vue](./application/vue)
    * [vuex](./application/vuex)
  * [config](./config)
+ * [scripts](./scripts)
  * node_modules
  * public
 

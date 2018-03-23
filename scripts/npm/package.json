@@ -1,11 +1,11 @@
 {
   "name": "get-start-template-vue",
-  "version": "1.0.9b",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {},
   "bin": {
-    "get-start-template-vue": "./npx_script/cli.js"
+    "get-start-template-vue": "./index.js"
   },
   "author": "Andrei Soroka",
   "license": "MIT",
