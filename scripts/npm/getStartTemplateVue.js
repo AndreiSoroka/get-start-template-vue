@@ -30,8 +30,12 @@ async function start() {
 
 
 function createPath(p) {
-  console.log('created path:', p);
-  return fs.mkdirSync(p);
+  if (!fs.existsSync(p)) {
+    console.log('path created:', p);
+    return fs.mkdirSync(p);
+  }
+
+  console.log('path is already created:', p);
 }
 
 function download(url, dest) {
