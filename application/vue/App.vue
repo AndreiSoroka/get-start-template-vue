@@ -6,13 +6,11 @@
   </div>
 </template>
 
-<style lang="scss"></style>
-
 <script>
   import './app.scss';
 
-  import HeaderTemplate from './template/Header/index.vue';
-  import NavigationTemplate from './template/Navigation/index.vue';
+  import HeaderTemplate from './templates/Header/Header.vue';
+  import NavigationTemplate from './templates/Navigation/Navigation.vue';
   import {mapState} from 'vuex';
 
 
@@ -31,3 +29,5 @@
     methods: {},
   };
 </script>
+
+<style lang="scss"></style>

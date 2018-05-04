@@ -1,6 +1,6 @@
 <template>
   <div>
-    Not found
+    Index
   </div>
 </template>
 
@@ -10,3 +10,5 @@
 
   export default {};
 </script>
+
+<style lang="scss"></style>
